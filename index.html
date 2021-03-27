@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Who will be your 3 starter Pokemon</title>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container w-50 text-center ">
+            <h1 class="title p-3 text-center">3 starter pokemon based on your birthday</h1>
+            <p class="text-center">Enter your birthday to see what 3 pokemon from the original 151 you would start with.</p>
+            <div class="d-flex justify-content-center">
+                <form class="form-group" method="get" id="form">
+                    <input type="number" name="month" id="month" placeholder="m" min="1" max="151">
+                    <input type="number" name="day" id="day" placeholder="dd" min="1" max="151">
+                    <input type="number" name="year" id="year" placeholder="yy" min="1" max="151">
+                    <input id="find" type="submit" value="find">
+                    <input id="clear" type="submit" value="clear">
+                </form>
+            </div>
+            <div id="starters" class="d-flex flex-wrap justify-content-between m-4" >
+                <div class="row"></div>
+            </div>
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
